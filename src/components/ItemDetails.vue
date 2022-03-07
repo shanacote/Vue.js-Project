@@ -2,19 +2,10 @@
     <!-- <teleport to="#modals">
         <div v-if="showModal" class="modal"> -->
             <div v-if="currentItem.item_id" class="edit-form">
-                <h4>Item</h4>
+                <br/>
                 <form>
                 <div class="mb-4">
-                    <label for="item_id">Item_id</label>
-                    <input
-                    type="text"
-                    class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
-                    id="item_id"
-                    v-model="currentItem.item_id"
-                    />
-                </div>
-                <div class="mb-4">
-                    <label for="name">Name</label>
+                    <label for="name">Item</label>
                     <input
                     type="text"
                     class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
@@ -27,7 +18,7 @@
 
 
 
-                <button type="submit" class="inline-block p-1 text-center font-semibold text-sm align-baseline leading-none rounded bg-green-500 text-white hover:green-600" @click="updateItem">
+                <button type="submit" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-500 text-white hover:bg-blue-600" @click="updateItem">
                 Save
                 </button>
                 <p>{{ message }}</p>
@@ -103,14 +94,5 @@ export default defineComponent({
   margin: auto;
 }
 
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 300px;
-    width: 400px;
-    background: gray;
-    text-align: center;
-}
+
 </style>

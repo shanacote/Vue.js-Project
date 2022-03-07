@@ -25,30 +25,14 @@
     </div>
 
     <!-- https://www.youtube.com/watch?v=TYcNDRav-N4 -->
-    <div id=modals></div>
+    <div id="modals"></div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useStore } from 'vuex'
 
 export default defineComponent({
     name: "App",
-    setup(props, context) {
-        const store=useStore();
-        return {
-            getStore:function() {
-                return store;
-            }
-        }
-    },
-    methods: {
-        handleLogoutClick:function() {
-            const store=this.getStore();
-            store.dispatch('auth/logout');
-            this.$router.push('/login');
-        }
-    },
     mounted() {
         const mobileMenuButton=document.querySelector(".mobile-menu-button");
         mobileMenuButton?.addEventListener("click", () => {
@@ -56,14 +40,6 @@ export default defineComponent({
             mobileMenu?.classList.toggle("hidden");
         });
     },
-    computed: {
-        currentUser() {
-            const store=useStore();
-            return store.state.auth.user;
-        },
-    },
-    components: {
-    }
 });
 </script>
 

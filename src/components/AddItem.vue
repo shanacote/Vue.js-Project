@@ -2,9 +2,9 @@
   <div class="submit-form">
     <div v-if="!submitted">
       <div class="mb-4">
-        <label for="item">Name</label>
+        <label for="item">Item</label>
         <input
-          class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
+          class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-white-200 rounded"
           id="name"
           required
           v-model="item.name"
@@ -13,12 +13,12 @@
       </div>
 
 
-      <button @click="saveItem" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-green-500 text-white hover:bg-green-600">Submit</button>
+      <button @click="saveItem" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-500 text-white hover:bg-blue-600">Save</button>
     </div>
 
     <div v-else>
       <h4>You submitted successfully!</h4>
-      <button class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-green-500 text-white hover:bg-green-600" @click="newItem">Add</button>
+      <button class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-500 text-white hover:bg-blue-600" @click="newItem">Add</button>
     </div>
   </div>
 </template>

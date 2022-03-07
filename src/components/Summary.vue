@@ -7,7 +7,7 @@
 
 
     <teleport to="#modals">
-        <div v-if="showAddModal" class="modal">
+        <div v-if="showAddModal" class="modal"  style="border: solid 1px black;border-radius: 5px;">
             <AddItem v-on:done-update="addModalDone"></AddItem>
         </div>
     </teleport>
@@ -46,4 +46,14 @@ export default defineComponent({
 </script>
 
 <style>
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 400px;
+    background: #ccc;
+    text-align: center;
+}
 </style>
