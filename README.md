@@ -1,29 +1,26 @@
 
-# vue-3-typescript-example
+# vue-3-project
+
+Make sure you are in the correct folder in terminal before running the following 2 instructions.
+These instructions are all you need to successfully run the program.
 
 ## Project setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### How to Run
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Load app in browser
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+Access http://localhost:8081/ on your browser
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Resources
 Starting point:
 https://www.bezkoder.com/vue-js-node-js-express-mysql-crud-example/
 
@@ -52,7 +49,3 @@ https://www.codemag.com/Article/2101051/Routing-in-Vue3-Navigating-the-Options
 Vue properties and lifecycle:
 https://medium.com/geekculture/vue-js-3-setup-function-236063add3cd
 
-How to start server:
-====================
-yarn install
-yarn serve
